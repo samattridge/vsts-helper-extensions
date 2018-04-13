@@ -1,0 +1,30 @@
+{
+  "name": "publish-test-results-to-influxdb",
+  "version": "0.1.0",
+  "description": "VSTS Publish Test Results to InfluxDB Task",
+  "main": "publishtestresultstoinfluxdb.js",
+  "scripts": {
+    "build": "tsc -p .",
+    "postbuild": "npm run package",
+    "package": "node_modules/.bin/tfx extension publish --output-path bin --token %VSTSMarketplaceToken% --manifest-globs vss-extension.json --rev-version --publisher %VSTSMarketplacePublisher%",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://vfuk-digital.visualstudio.com/Digital/_git/vsts-helper-extensions"
+  },
+  "author": "Vodafone",
+  "license": "MIT",
+  "dependencies": {
+    "influx": "^5.0.0-alpha.4",
+    "uuid": "^3.0.1",
+    "vss-web-extension-sdk": "^5.131.0",
+    "vsts-task-lib": "^2.0.6",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "@types/node": "^9.6.4",
+    "@types/q": "^1.5.0",
+    "@types/xml2js": "^0.4.2"
+  }
+}

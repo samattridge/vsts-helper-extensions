@@ -1,0 +1,41 @@
+{
+    "manifestVersion": 1,
+    "id": "vsts-helper-extensions",
+    "name": "Vodafone VSTS Helper Extensions",
+    "version": "0.1.0",
+    "publisher": "SamAttridge",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "VSTS Helper extension for Vodafone use.",
+    "categories": [
+        "Build and release"
+    ],
+    "icons": {
+        "default": "images/extension-icon.png"        
+    },
+    "files": [
+        {
+            "path": "publishTestResultsToInfluxDB"
+        },
+        {
+            "path": "node_modules/vss-web-extension-sdk/lib",
+            "addressable": true,
+            "packagePath": "lib"
+        }        
+    ],
+    "contributions": [
+        {
+            "id": "publish-test-results-to-influxdb",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "buildAndReleaseTask"
+            }
+        }
+    ]
+}

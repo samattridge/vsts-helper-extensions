@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "allowJs": true,
+        "target": "es6",
+        "module": "commonjs",
+        "lib": [
+            "dom",
+            "es6",
+            "es2015.promise"
+        ],
+        "noEmit": false,
+        "sourceMap": true
+    },
+    "include": [
+        "scripts/**/*"
+    ],    
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}
