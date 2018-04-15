@@ -66,3 +66,6 @@ release/
 
 # Environments file for testing
 .envs
+
+# VSTS Publish file
+.vsix
