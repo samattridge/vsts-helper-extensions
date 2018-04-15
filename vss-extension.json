@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "vsts-helper-extensions",
     "name": "Vodafone VSTS Helper Extensions",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "SamAttridge",
     "targets": [
         {
@@ -34,7 +34,7 @@
                 "ms.vss-distributed-task.tasks"
             ],
             "properties": {
-                "name": "buildAndReleaseTask"
+                "name": "publishTestResultsToInfluxDB"
             }
         }
     ]

@@ -17,6 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "influx": "^5.0.0-alpha.4",
+    "npm": "^5.8.0",
     "uuid": "^3.0.1",
     "vss-web-extension-sdk": "^5.131.0",
     "vsts-task-lib": "^2.0.6",
